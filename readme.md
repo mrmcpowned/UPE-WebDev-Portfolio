@@ -41,6 +41,10 @@ of the WebDev workshop. During the workshop we went over the following:
     - `margin-left:`
     
 ###Changelog
+**January 30, 2017**
+- Added background.jpg to the img folder
+- Added `<div class="background spacer"></div>` to the `#hero` section to account for future CSS styling
+
 **January 29, 2017**
 - Images have been added to the img folder
 - Images in the html now point to actual images stored in the

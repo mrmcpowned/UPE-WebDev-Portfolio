@@ -161,6 +161,7 @@ is visible to the web browser.
             </ul>
         </nav>
     </header>
+
     <!--
         So, we've finally gone past our header, and now we've reached the section tag. The section tag is typically
         used for breaking a webpage into self-standing parts. Since none of the content inside of the following sections
@@ -182,6 +183,13 @@ is visible to the web browser.
         
     -->
     <section id="hero" class="page">
+       <!--
+            --A Bit of an Interjection--
+            In the original workshop, this tag didn't appear, and mainly it was because I had forgotten the need
+            for its existence. Without this tag here, we won't be able to apply special CSS properties to the 
+            background image while leaving our text headings unaffected. This div will essentially hold what is t obe the background of the hero image
+        -->
+        <div class="background spacer"></div>
         <div>
             <span>This is my</span>
             <span>personal</span>

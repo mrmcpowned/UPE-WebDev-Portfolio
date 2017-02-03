@@ -6,32 +6,80 @@ font-family: 'Oswald', sans-serif;
 
 html {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px
+    font-size: 1.6vw;
 }
 
 a{
     color: inherit;
 }
 
-#hero{
-    font-family: 'Cabin Sketch', cursive;
-}
+/* Sidebar */
 
 .sidebar{
     height: 100vh;
     width: 30vw;
     position: fixed;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.sidebar div{
+    position: absolute;
+    top: 1.8vw;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar img{
+    height: 10.5vw;
+    border-radius: 100%;
+    border: 5pt solid #29ABE2;
+    position: absolute;
+    right: 0%;
+    transform: translateX(50%);
+    
 }
 
 .sidebar div h1{
     font-size: 200%;
     display: inline-block;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 15px;
+    color: white;
+}
+
+
+.sidebar nav{
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 8vw;
+}
+
+.sidebar li{
+    padding: 5px 0;
 }
 
 .sidebar a{
+    display: inline-block;
+    font-size: 250%;
     text-decoration: none;
-    font-size: 250%
+    padding: 10px 15px;
+    border-radius: 1em;
+    transition: color .4s ease-out, background .4s ease-out;
 }
+
+.sidebar a:hover{
+    color: darkred;
+    background: rgba(0,0,0,.1)
+}
+
+
+
 
 div.spacer{
     height: 100vh;
@@ -45,4 +93,41 @@ div.spacer{
 .page{
     width: calc(100% - 30vw);
     margin-left: 30vw;
+    color: black;
+    min-height: 100vh
+}
+
+.page:not(#hero){
+    position: relative;
+}
+
+section h1{
+    font-size: 250%;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+section article p{
+    margin-bottom: 2%;
+    font-weight: 100;
+}
+
+/* Page Styling */
+section.page:not(#hero){
+    box-sizing: border-box;
+    padding: 2vw 6vw;
+}
+
+.page .list li{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center
+}
+
+#hero{
+    font-family: 'Cabin Sketch', cursive;
 }

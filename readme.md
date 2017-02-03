@@ -41,6 +41,12 @@ of the WebDev workshop. During the workshop we went over the following:
     - `margin-left:`
     
 ###Changelog
+**February 3, 2017**
+- Added `<meta name="viewport" content="width=device-width, initial-scale=1">` to document head
+- Added Lorem Ipsum text to text areas
+- Added a `.list` class to all `<ul>` tags used in `.page`s to better semantically define those tags
+- Wrapped all `<img>` tags inside of `.list`with `<div class="image"></div>` for better styling application
+
 **January 30, 2017**
 - Added background.jpg to the img folder
 - Added `<div class="background spacer"></div>` to the `#hero` section to account for future CSS styling
